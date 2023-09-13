@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "great-expectations-talk"
+version = "0.1.0"
+description = ""
+authors = ["Pablo Lozano Santiuste <plozano94@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+run_checkpoint = "great_expectations_talk.runner:run"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+great-expectations = "^0.17.14"
+sqlalchemy = "^1"
+clickhouse-sqlalchemy = "^0.2.4"
+psycopg2 = "^2.9.7"
+click = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
